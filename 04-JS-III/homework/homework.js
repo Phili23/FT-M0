@@ -215,13 +215,18 @@ function empiezaConNueve(n) {
     //Desarrolle una función que recibe como parámetro un número entero n. Debe retornar true si el entero 
     //inicia con 9 y false en otro caso.
     //Escribe tu código aquí
-    let numero = n.toString()
-    if(numero.charAt(0) === "9"){
-      return true
-    }
-    return false
+    //let numero = n.toString()
+    //if(numero.charAt(0) === "9"){
+    //  return true
+   // }
+   // return false
   
-  
+  let sustraer =String(n).substring(0,1);
+  let vovernumero=Number(sustraer);
+  if(vovernumero===9){
+    return true;
+      }
+      return false;
 }
 
 
